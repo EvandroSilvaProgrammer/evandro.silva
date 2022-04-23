@@ -27,6 +27,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   
+  <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 
 <body>
@@ -42,8 +44,8 @@
           <div class="col-lg-8">
             <h2 class="portfolio-title">Happy Net - Website</h2>
             <div class="owl-carousel portfolio-details-carousel">
-              <img src="assets/img/portfolio/happy-net/happy-net-home.png" class="img-fluid" alt="">
-              <img src="assets/img/portfolio/happy-net/happy-net-coverage.png" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/happy-net/happy-net-home.png" class="img-fluid lozad" alt="">
+              <img src="assets/img/portfolio/happy-net/happy-net-coverage.png" class="img-fluid lozad" alt="">
             </div>
           </div>
           
@@ -85,6 +87,11 @@
   
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const observer = lozad();
+    observer.observe();
+  </script>
   
 </body>
 
